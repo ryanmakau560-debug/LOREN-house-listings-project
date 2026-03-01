@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<h1><head>
+    <title>Loren House Listings</title>
+
+    <style>
+        .main-header {
+            background-color: #b9b6b6;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            animation: reversemove 2s infinite;
+            
+        }
+        @keyframes reversemove {
+            0% { transform: translateX(2); }
+            50% { transform: translateX(-10px); }
+            100% { transform: translateX(2); }
+        }
+        .house-image {
+            width: 50%;
+            height: 50%;
+            margin-top: 10px;
+            size: 10px;
+            margin-left: 20px;
+            animation: alternate-reversemove 2s infinite;
+        }
+        @keyframes alternate-reversemove {
+            0% { transform: translateX(-2); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(-2); }
+        }
+    </style>
+</head>
+<div class="main-header">
+    <h1 style="font-family: Helvetica; font-size: 36px;">Loren House Listings</h1>
+    <img src="Black Lines House Real Estate Logo.jpg" alt="Loren House Logo" class="logo">
+<style>
+body { background-color: #000000; }</style>
+</h1>
+<body>
+    <img src="Kenyan homes.jpg" alt="Kenyan Homes" class="house-image">
+    <div>
+        <style>
+            .buttons-right{
+                position: absolute;
+                right: 80px;
+                top:50%;
+                animation: glow 0.5s infinite alternate;}
+                @keyframes glow {
+                    from { text-shadow: 0 0 5px #fff, 0 0 10px #c31d1d, 0 0 15px #07c0e0; }
+                    to { text-shadow: 0 0 10px #ffffff, 0 0 20px #0e3dd8, 0 0 30px #0bacd8; }
+                }
+            .buttons-right a{
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                padding: 12px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                border: white solid 2px;
+            }
+            .buttons-right a:hover{
+                background-color: white;
+                color: black;
+                border: black solid 2px;
+            }
+            .buttons-right {
+                position: absolute;
+                right: 80px;
+                top: 50%;
+                display: flex;
+                gap: 20px;
+            }
+            .buttons-right a {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                      top: 50%;}
+        </style>
+    </div><div class="buttons-right">
+    <a href="aboutus.html">About Us</a>
+        <a href="listings.html">View Listings</a>
+        </div>
+    <div class="img2">
+    </body>
+</html>
