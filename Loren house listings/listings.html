@@ -1,160 +1,125 @@
 <!DOCTYPE html>
-<html><head>
-    <header>
-    <style>
-        .heading {
-            font-family: Arial, sans-serif;
-            color: rgb(9, 9, 9);
-            text-align: center;
-            margin-top: 20px;
-            justify-self: center;
-            align-items: center;
-            display: flex;
-            background-color: grey;
-        }
-        header {
-            background-color:grey;
-            padding: 20px 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
-    </style><h1 class="heading">House Listings</h1></head></header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loren Houses | Premium Listings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    .header-grey {
+      background-color: #808080;
+    }
+    .listing-card:hover {
+      border-color: #ffffff;
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+    .fade-in-img {
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+    .fade-in-img.active {
+      opacity: 1;
+    }
+  </style>
+</head>
 <body>
-<style>body { background-color: black; }
-    .listing-container {
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
-        width: 50%;
-        background: black;
-        border: 2px solid white;
-        padding: 10px;
-    }
-    img {
-        width: 50%;
-        display: block;
-        transition: transform 0.3s ease;
-        height: 50%;    
-    }
-    img:hover {
-        transform: scale(1.05);
-    }
-    .status {
-        color: rgb(12, 159, 10);
-        background-color: beige;
-        padding: 5px;
-        text-align: center;
-        font-size: x-large;
-    }
-    .status2 {
-        color: rgb(12, 159, 10);
-        background-color: beige;
-        padding: 5px;
-        text-align: center;
-        font-size: x-large;
-    }
-    .status4 {
-        color: rgb(221, 15, 4);
-        background-color: beige;
-        padding: 5px;
-        text-align: center;
-        font-size: x-large;
-    }
-    .status3 {
-        color: rgb(234, 7, 204);
-        background-color: beige;
-        padding: 5px;
-        text-align: center;
-        font-size: x-large;
-    }
-    .developer-contact {
-        color: white;
-        background-color: black;
-        padding: 5px;
-        text-align: center;
-    }
-     .buttons-right{
-                position: absolute;
-                right: 40px;
-                top: 20px;
-            }
-            .buttons-right a{
-                text-decoration: none;
-                background-color: black;
-                color: white;
-                padding: 12px 20px;
-                border-radius: 5px;
-                font-size: 16px;
-                border: white solid 2px;
-            }
-            .buttons-right a:hover{
-                background-color: white;
-                color: black;
-                border: black solid 2px;
-            }
-            .buttons-right {
-                position: absolute;
-                right: 80px;
-                top: 20px;
-                display: flex;
-                gap: 20px;
-            }
-            .buttons-right a {
-                text-decoration: none;
-                background-color: black;
-                color: white;
-                padding: 12px 20px;
-                border-radius: 5px;
-                font-size: 16px;
-                border: white solid 2px;
-            }
+<nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-zinc-800 p-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="font-black text-xl tracking-tighter text-white">LOREN</div>
+    
+    <div class="flex gap-4">
+      <a href="Land in page.html" class="bg-zinc-800 hover:bg-zinc-700 text-white px-5 py-2 rounded font-bold text-xs transition border border-zinc-700">
+        HOME
+      </a>
+      <a href="aboutus.html" class="bg-zinc-800 hover:bg-zinc-700 text-white px-5 py-2 rounded font-bold text-xs transition shadow-lg shadow-zinc-900/40">
+        About us
+      </a>
+      <a href="contact us.html" class="bg-zinc-800 hover:bg-zinc-700 text-white px-5 py-2 rounded font-bold text-xs transition shadow-lg shadow-zinc-900/40">
+        Contact us
+      </a>
+    </div>
+  </div>
+</nav>
+  <header class="header-grey text-black py-6 mb-10 text-center rounded-lg">
+    <h1 class="text-4xl font-bold tracking-widest uppercase">House Listings</h1>
+  </header>
 
+  <main class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-</style>
-<div class="buttons-right">
-    <a href="index.html">back to home</a>
-    <a href="aboutus.html">About Us</a>
-</div>
-<div class="listing">
-    <img src="mansion image.jpg" alt="">
-    <div class="status">Available</div>
-    <div class="developer-contact">
-        5 bedroom karen mansion. price:150 million.
-        Developer Contact: 0799054255
-<div class="listing-2">
-    
-    <img src="e415ab5f-0bbc-4166-beb3-4aea8e618550 (1).jpg" alt="">
-    <div class="status2">Available</div>
-    <div class="developer2-contact">
-        3 bedroom villa. price:50 million.
-        Developer Contact: 0799054255
-<div class="listing-3">
-    
-    <img src="appartment 3.jpg" alt="">
-    <div class="status4">sold out</div>
-    <div class="developer2-contact">
-        3 bedroom apartment. price:6 million.
-        Developer Contact: 0799054255
-</div>
-<div class="listing-4">
-    
-    <img src="appartment 2.jpg" alt="">
-    <div class="status3">rented</div>
-    <div class="developer2-contact">
-        2 bedroom apartment. price:4.5 million.
-        Developer Contact: 0799054255
-</div>
-<div class="listing-5">
-    
-    <img src="appartment1.jpg" alt="">
-    <div class="status">Available</div>
-    <div class="developer2-contact">
-        1 bedroom apartment. price:3 million.
-        Developer Contact: 0799054255
-<button>
+      <div class="listing-card border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
+        <img src="e415ab5f-0bbc-4166-beb3-4aea8e618550 (1).jpg" alt="House 1" class="w-full h-64 object-cover">
+        <div class="bg-green-400 text-black text-center py-1 font-bold italic border-y-2 border-black">Available</div>
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-bold text-white uppercase">5 Bedroom Karen Mansion</h2>
+          <p class="text-lg">Price: 50 Million
+          </p>
+          <p class="text-sm text-zinc-400 mt-2">Dev: Samia homes/       Dev Contact: 0799054233</p>
+        </div>
+      </div>
+
+      <div class="listing-card border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
+          <img src="Kenyan homes.jpg" class="fade-in-img active"/> 
+        </a>
+        <div class="bg-red-400 text-black text-center py-1 font-bold italic border-y-2 border-black uppercase tracking-widest">Sold</div>
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-bold text-white uppercase">4 Bedroom Villa</h2>
+          <p class="text-lg">Price: 50 Million</p>
+          <p class="text-sm text-zinc-400 mt-2">Dev: green garden villas/       Dev Contact: 0795432100</p>
+        </div>
+      </div>
+
+      <div class="listing-card border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
+        <img src="appartment1.jpg" alt="House 3" class="w-full h-64 object-cover">
+        <div class="bg-yellow-400 text-black text-center py-1 font-bold italic border-y-2 border-black uppercase tracking-widest">Rented</div>
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-bold text-white uppercase">2 Bedroom Apartment</h2>
+          <p class="text-lg">Price: 4.5 Million</p>
+          <p class="text-sm text-zinc-400 mt-2">Dev:  culton apartments/       Dev Contact: 0795605567</p>
+        </div>
+      </div>
+
+      <div class="listing-card border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
+        <img src="appartment 3.jpg" alt="House 4" class="w-full h-64 object-cover">
+        <div class="bg-green-400 text-black text-center py-1 font-bold italic border-y-2 border-black uppercase">Available</div>
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-bold text-white uppercase">4 Bedroom Apartment</h2>
+          <p class="text-lg">Price: 9 Million</p>
+          <p class="text-sm text-zinc-400 mt-2">Dev: Kenya Property Hub/       Dev Contact: 0799054563</p>
+        </div>
+      </div>
+
+      <div class="listing-card border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
+        <img src="appartment 2.jpg" alt="House 5" class="w-full h-64 object-cover">
+        <div class="bg-green-400 text-black text-center py-1 font-bold italic border-y-2 border-black uppercase">Available</div>
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-bold text-white uppercase">Studio Apartment</h2>
+          <p class="text-lg">Price: 3 Million</p>
+          <p class="text-sm text-zinc-400 mt-2">Dev: Paul & Sons Real Estate/       Dev Contact: 0764593025</p>
+        </div>
+      </div>
+
+      <div class="listing-card border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
+        <img src="mansion image.jpg" alt="House 6" class="w-full h-64 object-cover">
+        <div class="bg-red-400 text-black text-center py-1 font-bold italic border-y-2 border-black uppercase tracking-widest">Sold</div>
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-bold text-white uppercase">6 Bedroom Mansion</h2>
+          <p class="text-lg">Price: 200 Million</p>
+          <p class="text-sm text-zinc-400 mt-2">Dev: Samia homes/       Dev Contact: 0799054233</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="mt-20 py-10 border-t border-zinc-800 text-center text-zinc-500 text-xs">
+    &copy; 2026 LOREN HOUSES - ALL RIGHTS RESERVED
+  </footer>
+
 </body>
 </html>
